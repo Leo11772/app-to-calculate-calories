@@ -43,9 +43,9 @@ The project focuses on **clean UI**, **reusable components** and
 
 | Layer | Technologies |
 |---|---|
-| **Frontend** | React, TypeScript, Tailwind Css |
+| **Frontend** | React, TypeScript |
 | **Build Tool** | Vite |
-| **Styling** | CSS |
+| **Styling** | Tailwind Css |
 | **Code Quality** | ESLint |
 | **Tools** | Git, GitHub |
 
