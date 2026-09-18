@@ -1,75 +1,67 @@
-# React + TypeScript + Vite
+# App to Calculate Calories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Web application for calculating daily calorie needs based on user information.
 
-Currently, two official plugins are available:
+[![Status](https://img.shields.io/badge/status-in--development-blue)](#status)
+[![License](https://img.shields.io/badge/license-MIT-green)](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Web Application** · **React** · **TypeScript** · **Vite**
 
-## React Compiler
+[Live Demo](https://teste-jet-phi.vercel.app/) · [Repository](https://github.com/Leo11772/app-to-calculate-calories)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+App to Calculate Calories is a web application designed to calculate
+daily calorie needs based on user-provided information.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The project focuses on **clean UI**, **reusable components** and
+**type-safe development**, providing a simple and responsive experience.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
 
-```
+- Daily calorie calculation
+- User data input
+- Dynamic calculation results
+- Form validation
+- Responsive interface
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Preview
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![{{PROJECT_NAME}} Preview](src/assets/screencapture-teste-jet-phi-vercel-app-2026-09-18-07_59_20.png)
 
-```
+> Screenshot of the working web app.
+
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React, TypeScript, Tailwind Css |
+| **Build Tool** | Vite |
+| **Styling** | CSS |
+| **Code Quality** | ESLint |
+| **Tools** | Git, GitHub |
+
+---
+
+## Architecture
+
+```text
+User
+  ↓
+React Interface
+  ↓
+Form Validation
+  ↓
+Request API
+  ↓
+Calculation Logic
+  ↓
+Results
