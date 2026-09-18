@@ -2,7 +2,7 @@
 
 > Web application for calculating daily calorie needs based on user information.
 
-[![Status](https://img.shields.io/badge/status-in--development-blue)](#status)
+[![Status](https://img.shields.io/badge/status-developed-green)](#status)
 [![License](https://img.shields.io/badge/license-MIT-green)](#license)
 
 **Web Application** · **React** · **TypeScript** · **Vite**
